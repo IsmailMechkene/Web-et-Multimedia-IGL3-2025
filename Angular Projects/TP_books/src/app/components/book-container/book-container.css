@@ -1,0 +1,87 @@
+.container-root {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    width: 1300px;
+    border-radius: 25px;
+    padding: 25px;
+    gap: 25px;
+}
+
+.books-container {
+    max-height: 450px;
+    overflow-y: auto;
+    border-radius: 12px;
+}
+
+.table-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    padding: 6px 0;
+    margin-right: 12px;
+    margin-left: 12px;
+    flex-wrap: wrap;
+}
+
+.table-controls input[type="search"],
+.table-controls select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(124,95,255,0.25);
+    background: rgba(255,255,255,0.65);
+    font-size: 14px;
+    color: #0b1b2b;
+    outline: none;
+    width: 200px;
+    transition: border-color .15s ease;
+    backdrop-filter: blur(4px);
+}
+
+.table-controls input[type="search"]:hover,
+.table-controls select:hover {
+    border-color: rgba(124,95,255,0.45);
+}
+
+.table-controls input[type="search"]:focus,
+.table-controls select:focus {
+    border-color: rgba(124,95,255,0.75);
+}
+
+.table-controls .counter {
+    margin-left: auto;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0b1b2b;
+    background: rgba(255,255,255,0.65);
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(124,95,255,0.25);
+    backdrop-filter: blur(4px);
+}
+
+@media (max-width: 720px) {
+    .table-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .table-controls .counter {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,106 @@
+.book-list-wrap {
+    width: 100%;
+    overflow-x: auto;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #0b1b2b;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.book-table thead th {
+    padding: 12px 18px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #6b2fb6;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.book-table tbody tr {
+    background: #fff;
+}
+
+.book-table tbody tr:nth-child(even) {
+    background: #f6f7fb;
+}
+
+.book-table td {
+    padding: 12px 18px;
+    vertical-align: middle;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(15,23,42,0.04);
+    white-space: nowrap;
+    color: rgba(8,20,28,0.9);
+}
+
+.book-table tbody tr:hover td {
+    background: rgba(124, 95, 255, 0.06);
+}
+
+.empty {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.actions button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    min-width: 64px;
+}
+
+.actions button:first-child {
+    background: #6b2fb6;
+    color: #fff;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.06);
+}
+
+.actions button:first-child:hover {
+    background: #4338ca;
+}
+
+.actions button:last-child {
+    background: #fff;
+    color: #d94660;
+    border: 1px solid rgba(217,70,96,0.12);
+}
+
+.actions button:last-child:hover {
+    background: rgba(217,70,96,0.06);
+}
+
+@media (max-width: 920px) {
+    .book-table { min-width: 620px }
+    .book-table thead th, .book-table td { padding: 10px 12px; font-size: 13px }
+    .actions button { padding: 6px 10px; font-size: 12px }
+}
+
+@media (max-width: 560px) {
+    .book-table { min-width: 480px }
+    .book-table thead th:nth-child(3),
+    .book-table td:nth-child(3) { display: none }
+    .book-table thead th:nth-child(4),
+    .book-table td:nth-child(4) { display: none }
+}
