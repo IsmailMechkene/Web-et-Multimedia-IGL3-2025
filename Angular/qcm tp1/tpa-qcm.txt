@@ -1,0 +1,44 @@
+Ismail Mechkene – IGL3
+
+TP Angular                                     
+IV. Création d’un projet
+•	Le dossier src/ :
+Ce dossier contient les fichiers principaux du projet comme index.html, styles.css et main.ts.
+•	Le dossier node_modules/ :
+Les packages nécessaires pour la fonctionnement du project.
+•	Le fichier angular.json :
+Il contient la configuration générale du projet.
+•	Le fichier package.json :
+Ce fichier contient l’ensemble des packages nécessaires.
+•	Le fichier package-lock.json :
+Il détaille toutes les dépendances du projet.
+•	Le fichier tsconfig.json :
+Il définit les paramètres du compilateur TypeScript	.
+________________________________________
+VI. Validation des acquis
+Partie 1 : QCM sur les outils de développement
+1.	Quel est le rôle principal de Node.js dans le développement Angular ?
+C’est l’environnement d’exécution qui permet d’exécuter du code JavaScript.
+2.	Quelle commande permet d’installer Angular CLI globalement ?
+npm install -g @angular/cli
+3.	Quel éditeur de code est le plus recommandé pour développer avec Angular ?
+Visual studio code.
+4.	Quel fichier contient les dépendances du projet et est utilisé par npm pour gérer les packages ?
+package.json
+5.	Quelle commande permet de créer un nouveau projet Angular nommé “ma-app” ?
+ng new AppName
+6.	À quoi sert la commande ng serve ?
+Elle lance un serveur de développement local.
+________________________________________
+Partie 2 : QCM sur la création d’un projet Angular
+1.	Dans quel dossier se trouvent les fichiers sources de l’application ?
+Dans le dossier src/.
+2.	Dans quel fichier sont déclarés les modules, composants et services de l’application ?
+Dans app.module.ts.
+3.	Quel est le rôle du fichier angular.json ?
+Il sert à définir la configuration du projet.
+4.	Quelle commande permet de générer un composant nommé “header” ?
+ng generate component header
+5.	À quoi sert le fichier tsconfig.json ?
+Il permet de configurer le compilateur TypeScript pour le projet Angular.
+
