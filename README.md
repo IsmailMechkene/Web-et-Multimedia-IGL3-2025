@@ -18,7 +18,7 @@ pas de capture (code uniquement)
 
 # Angular
 ## TP1 :
-pas de capture (code uniquement)
+pas de capture (code uniquement) <br>
 De plus, les réponses aux questions du QCM sont organisées dans un fichier text dédié, inclus directement dans le dossier Angular.
 
 ## TP2 :
