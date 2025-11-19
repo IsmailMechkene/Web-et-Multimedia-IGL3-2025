@@ -1,0 +1,12 @@
+<div *ngIf="task.completed; else notCompleted">
+  <span [ngClass]="{'completed-task': task.completed, 'pending-task': !task.completed}">
+    {{ task.description }}
+  </span>
+  <button (click)="toggleStatus()">Mark as Incomplete</button>
+</div>
+<ng-template #notCompleted>
+  <span [ngClass]="{'completed-task': task.completed, 'pending-task': !task.completed}">
+    {{ task.description }}
+  </span>
+  <button (click)="toggleStatus()">Mark as Complete</button>
+</ng-template>

@@ -1,0 +1,4 @@
+<div *ngFor="let article of articles" [ngClass]="{'high-importance': article.importance === 'high', 'medium-importance': article.importance === 'medium', 'low-importance': article.importance === 'low'}">
+  <h3>{{ article.title }}</h3>
+  <p>{{ article.content }}</p>
+</div>

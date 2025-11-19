@@ -1,0 +1,17 @@
+.dynamic-style {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.low-stock {
+    background-color: #ffcccc; /* Light red for low stock */
+}
+
+.medium-stock {
+    background-color: #ffffcc; /* Light yellow for medium stock */
+}
+
+.high-stock {
+    background-color: #ccffcc; /* Light green for high stock */
+}

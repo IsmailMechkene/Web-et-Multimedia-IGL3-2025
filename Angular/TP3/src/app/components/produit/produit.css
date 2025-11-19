@@ -1,0 +1,60 @@
+.card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    font-family: Inter, Arial, sans-serif;
+    margin: 16px;
+    transition: box-shadow 0.2s ease, scale 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.06);
+    scale: 1.01;
+}
+
+.thumb {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 12px 0;
+}
+
+button {
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 6px;
+    margin-top: 10px;
+    transition: background 0.15s ease;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+.en-stock {
+    border-color: #dcdcff;
+}
+
+.stock-true {
+    color: #0e9f6e;
+    font-weight: 600;
+}
+
+.stock-false {
+    color: #e02424;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #1a1a1a;
+}

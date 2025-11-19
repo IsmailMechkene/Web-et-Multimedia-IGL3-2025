@@ -1,0 +1,5 @@
+<div *ngFor="let product of products">
+  <div [ngStyle]="{'color': product.stock > 10 ? 'green' : 'red', 'font-weight': product.stock > 5 ? 'bold' : 'normal'}">
+    {{ product.name }} - Stock: {{ product.stock }}
+  </div>
+</div>

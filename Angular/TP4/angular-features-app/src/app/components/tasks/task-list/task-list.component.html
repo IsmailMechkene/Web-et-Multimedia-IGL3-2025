@@ -1,0 +1,10 @@
+<div *ngIf="tasks.length === 0">
+  <p>No tasks available. Please add a task.</p>
+</div>
+
+<ul *ngIf="tasks.length > 0">
+  <li *ngFor="let task of tasks" [ngClass]="{'completed': task.completed, 'pending': !task.completed}" [ngStyle]="{'text-decoration': task.completed ? 'line-through' : 'none'}">
+    {{ task.description }}
+    <button (click)="toggleTaskStatus(task)">Toggle Status</button>
+  </li>
+</ul>

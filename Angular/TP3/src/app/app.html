@@ -1,0 +1,14 @@
+<app-bienvenue></app-bienvenue>
+
+<app-utilisateur></app-utilisateur>
+<div style="display: flex; width: 100%; align-items: center; justify-content: center;">
+  <app-produit
+      [nomProduit]="'Lunettes de soleil'"
+      [imageUrl]="'/images/image.jpg'"
+      [prix]="129.99"
+      (ajout)="panier.ajouter($event)"
+  ></app-produit>
+
+  <app-panier #panier></app-panier>
+</div>
+

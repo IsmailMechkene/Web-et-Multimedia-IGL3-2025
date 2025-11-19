@@ -1,0 +1,17 @@
+.article {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.high-importance {
+    color: red;
+    font-weight: bold;
+}
+
+.medium-importance {
+    color: orange;
+}
+
+.low-importance {
+    color: green;
+}

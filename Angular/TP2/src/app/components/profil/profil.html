@@ -1,0 +1,19 @@
+<div>
+    <form>
+        <input 
+            type="text" 
+            name="prenom" 
+            [(ngModel)]="utilisateur.prenom"
+            id="prenom">
+
+        <input 
+            type="text" 
+            name="age" 
+            [(ngModel)]="utilisateur.age"
+            id="age">
+    </form>
+
+    <p>Prenom: {{ utilisateur.prenom }}</p>
+    <p>Age: {{ utilisateur.age }}</p>
+
+</div>

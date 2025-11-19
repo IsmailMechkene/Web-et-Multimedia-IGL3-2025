@@ -1,0 +1,16 @@
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 24px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    font-family: Inter, Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
