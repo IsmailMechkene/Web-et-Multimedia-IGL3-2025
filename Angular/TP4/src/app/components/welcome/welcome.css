@@ -1,0 +1,126 @@
+
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fae8ff 50%, #fce7f3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  max-width: 450px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: sans-serif!important;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #374151;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+input[type="text"]::placeholder {
+  color: #9ca3af;
+}
+
+br {
+  display: block;
+  content: "";
+  margin: 16px 0;
+}
+
+button {
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #6366f1 0%, #9333ea 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+
+p[ng-reflect-ng-if="true"]:first-of-type,
+p:has(+ p:last-child) {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border: 2px solid #86efac;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #065f46;
+  margin: 20px 0;
+}
+
+
+p:last-child {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+
+button:has(+ p[ng-reflect-ng-if="true"]) {
+  background: linear-gradient(135deg, #ef4444 0%, #ec4899 100%);
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+}
+
+button:has(+ p[ng-reflect-ng-if="true"]):hover {
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+}
+
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+}

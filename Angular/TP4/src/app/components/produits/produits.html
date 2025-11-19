@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Liste des Produits</h2>
+
+    <div class="products-list">
+        <div class="product-card" *ngFor="let p of produits">
+
+            <div class="product-info">
+                <span class="product-name">{{ p.nom }}</span>                    
+                <span class="stock-info">
+                    Stock :
+                    <span class="stock-value" 
+                            [ngStyle]="{'color': p.stock > 50 ? 'green' : p.stock >= 20 ? 'orange' : 'red'}"
+                            [ngClass]="{
+                            'stock-high': p.stock > 50,
+                            'stock-medium': p.stock >= 20 && p.stock <= 50,
+                            'stock-low': p.stock < 20
+                            }">
+                        {{ p.stock }}
+                    </span>
+                </span>
+            </div>
+
+            <div class="button-group">
+                <button (click)="augmenterStock(p)">+1</button>
+                <button (click)="diminuerStock(p)">-1</button>
+            </div>
+
+        </div>
+    </div>
+</div>

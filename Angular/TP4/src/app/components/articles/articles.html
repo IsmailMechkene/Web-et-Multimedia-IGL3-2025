@@ -1,0 +1,40 @@
+<div class="container">
+        <h2>Articles</h2>
+
+        <!-- Formulaire -->
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" [(ngModel)]="newTitle" placeholder="Titre">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" [(ngModel)]="newContent" placeholder="Contenu">
+            </div>
+
+            <div class="form-group">
+                <select [(ngModel)]="newImportance">
+                    <option value="élevée">Élevée</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="faible">Faible</option>
+                </select>
+            </div>
+
+            <button (click)="addArticle()">Ajouter</button>
+        </div>
+
+        <hr>
+
+        <!-- Liste des articles -->
+        <div class="articles-list">
+            <div class="article-card" *ngFor="let article of articles"
+                [ngClass]="{
+                'important': article.importance === 'élevée',
+                'moyen': article.importance === 'moyenne',
+                'faible': article.importance === 'faible'
+                }">
+
+                <h3>{{ article.titre }}</h3>
+                <p>{{ article.contenu }}</p>
+            </div>
+        </div>
+    </div>

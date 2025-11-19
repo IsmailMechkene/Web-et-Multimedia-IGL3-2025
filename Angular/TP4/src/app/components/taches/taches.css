@@ -1,0 +1,91 @@
+.container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        .tache {
+            background: white;
+            padding: 18px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            font-weight: 500;
+            border-left: 4px solid transparent;
+        }
+
+        .tache:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Bordures colorées selon la priorité */
+        .tache {
+            border-left-color: currentColor;
+        }
+
+        .terminee {
+            opacity: 0.6;
+            text-decoration: line-through;
+            background-color: #f8f9fa;
+        }
+
+        .terminee:hover {
+            opacity: 0.8;
+        }
+
+        button {
+            padding: 8px 18px;
+            border: 2px solid currentColor;
+            background-color: transparent;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            color: inherit;
+        }
+
+        button:hover {
+            background-color: currentColor;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .terminee button {
+            border-style: dashed;
+            opacity: 0.8;
+        }
+
+        /* Message vide */
+        .empty-state {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .empty-state p {
+            font-size: 1.1rem;
+            color: #999;
+            font-weight: 500;
+        }
